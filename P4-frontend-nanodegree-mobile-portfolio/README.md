@@ -9,7 +9,7 @@
 	7. Sublime Text 3 package Minify - https://github.com/tssajo/Minify
 
 Optimizations Made 
-####Part 1: Optimize PageSpeed Insights score for index.html
+Part 1: Optimize PageSpeed Insights score for index.html
 	1. Resized pizzeria.jpg
 	2. Added async attribute to all JS external scripts
 	3. Move the google analytics scripts to below the footer, both inline and external
@@ -18,7 +18,7 @@ Optimizations Made
 	6. inlined style.css - critical styles
 	7. Minified CSS, JavaScript, HTML
 
-####Part 2: Optimize Frames per Second in pizza.html
+Part 2: Optimize Frames per Second in pizza.html
 	1. Change Pizza Sizes slider optimization as per the Browser Performance optimization course
 	Lines 423 - 455
 	 a. removed determineDX function
