@@ -11,13 +11,13 @@
 	Optimizations Made 
 	
 	Part 1: Optimize PageSpeed Insights score for index.html
-	1. Resized pizzeria.jpg
-	2. Added async attribute to all JS external scripts
-	3. Move the google analytics scripts to below the footer, both inline and external
-	4. Removed Google Fonts
-	5. Add media attributes to print stylesheet
-	6. inlined style.css - critical styles
-	7. Minified CSS, JavaScript, HTML
+		1. Resized pizzeria.jpg
+		2. Added async attribute to all JS external scripts
+		3. Move the google analytics scripts to below the footer, both inline and external
+		4. Removed Google Fonts
+		5. Add media attributes to print stylesheet
+		6. inlined style.css - critical styles
+		7. Minified CSS, JavaScript, HTML
 
 	Part 2: Optimize Frames per Second in pizza.html
 		1. Change Pizza Sizes slider optimization as per the Browser Performance optimization course
