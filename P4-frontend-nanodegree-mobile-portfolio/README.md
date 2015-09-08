@@ -1,3 +1,38 @@
+	Resources Used
+	
+	1. Translate3d - vs xy vs. CSS Left - https://jsperf.com/translate3d-vs-xy/4
+	2. Added requestAnimationFrame when scrolling as per http://www.html5rocks.com/en/tutorials/speed/animations/
+	3. FEND Office Hours - https://plus.google.com/events/c8eah6f0d0t9eretebpm7dqi0ok?authkey=CKaNhtb0quvqKA
+	4. Udacity courses - Website Performance Optimization, Browser Performance Optimization
+	5. Udacity Github repo - https://github.com/udacity/frontend-nanodegree-mobile-portfolio
+	6. FEND Office Hour notes - https://github.com/udacity/fend-office-hours/tree/master/Web%20Optimization/Effective%20Optimizations%20for%2060%20FPS
+	7. Sublime Text 3 package Minify - https://github.com/tssajo/Minify
+
+Optimizations Made 
+####Part 1: Optimize PageSpeed Insights score for index.html
+	1. Resized pizzeria.jpg
+	2. Added async attribute to all JS external scripts
+	3. Move the google analytics scripts to below the footer, both inline and external
+	4. Removed Google Fonts
+	5. Add media attributes to print stylesheet
+	6. inlined style.css - critical styles
+	7. Minified CSS, JavaScript, HTML
+
+####Part 2: Optimize Frames per Second in pizza.html
+	1. Change Pizza Sizes slider optimization as per the Browser Performance optimization course
+	Lines 423 - 455
+	 a. removed determineDX function
+	 b. changed the changePizzaSizes to calculate the percent and just change the pizza width
+	 c. changed document.querySelectorAll to more efficient document.getElementsByClassName  
+	 
+	2. Scrolling optimizations
+    a. Added requestAnimationFrame when scrolling as per http://www.html5rocks.com/en/tutorials/speed/animations/
+	Lines 485 - 500, 512-518, 548-550
+    b. Optimized the updatePositions function - Lines 508 - 536
+	  c. Added requestAnimationFrame - Lines 512-518
+	  d. moved DOM query outside the loop - Lines 491
+	  e. changed document.querySelectorAll to more efficient document.getElementsByClassName - Lines 518
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
