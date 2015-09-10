@@ -440,8 +440,10 @@ var resizePizzas = function(size) {
           console.log("bug in sizeSwitcher");
     }
     // changed document.querySelectorAll to more efficient document.getElementsByClassName
+    // saved array length in a variable and using it in the for loop - as per code review
     var randomPizza = document.getElementsByClassName("randomPizzaContainer");
-    for (var i = 0; i < randomPizza.length; i++) {
+    var ranPizzaLen = randomPizza.length;
+    for (var i = 0; i < ranPizzaLen; i++) {
       randomPizza[i].style.width = newWidth + '%';
      }
   }
@@ -457,8 +459,9 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+// moved the DOM query outside the for loop and saved it into a variable- as per code review
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -520,19 +523,11 @@ function updatePositions() {
   //moving DOM query outside loop
   var scrCalc = currentScrollY /1250;
 
-  //animate only visible pizzas in viewport. get number of visible rows
-  var visRow = Math.ceil(window.innerHeight / 256);
-  var cntPizza = 0;
-
-  // changing one for to nested for
-  for (var i=1; i<=visRow+1; i++){ //for each visible row
-    for (var j=1; j<=8; j++){ //for each visible column
-      var phase = Math.sin((scrCalc) + (cntPizza % 5));
-      // using translate 3d vs left
-      var transformVal = items[cntPizza].basicLeft + 100 * phase;
-      items[cntPizza].style.transform = "translate3d("+transformVal+"px,0,0)";
-      cntPizza++;
-    }
+  // Move the pizzas by phase - as per code review
+  var phase;
+  for (var i=0, len=items.length; i < len; i++){
+    phase = Math.sin(srcCalc + i % 5) * 100;
+    items[i].style.transform = 'translate3d(' + phase + 'px, 0, 0)';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -553,16 +548,20 @@ window.addEventListener('scroll', onScroll, false);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  //for (var i = 0; i < 200; i++) {
+  //moved variable declaration outside the loop - as  per code review
+  var elem;
+  //moving DOM query outside  loop and initializing local variable - as per code review
+  var movingPizzas = document.getElementById('movingPizzas1');
   for (var i = 0; i < 40; i++) {
-    var elem = document.createElement('img');
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
+    //Using translateX as per code review
+    elem.style.left = (i % cols) * s + 'px';
     elem.style.top = (Math.floor(i / cols) * s) + 'px'; //1636
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    movingPizzas.appendChild(elem);
   }
   updatePositions();
 });
