@@ -523,11 +523,15 @@ function updatePositions() {
   //moving DOM query outside loop
   var scrCalc = currentScrollY /1250;
 
-  // Move the pizzas by phase - as per code review
-  var phase;
+  // Calculate the phases first - as per code review
+  var phase=[];
+  for (var i=0; i<5;i++){
+        //fixed typo as per code review
+    phase.push(Math.sin(scrCalc + i)*100);
+  }
+  
   for (var i=0, len=items.length; i < len; i++){
-    phase = Math.sin(srcCalc + i % 5) * 100;
-    items[i].style.transform = 'translate3d(' + phase + 'px, 0, 0)';
+    items[i].style.transform = 'translate3d(' + phase[i%5] + 'px, 0, 0)';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.

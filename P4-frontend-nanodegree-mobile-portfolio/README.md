@@ -38,10 +38,12 @@ Additional changes after submission as per code review
 views/js/main.js
 1. Line 444 - saved array length in a variable and using it in the for loop
 2. Line 462 - moved the DOM query outside the for loop and saved it into a variable
-3. Line 526 - Move the pizzas by phase - as per code review
 4. Line 552 - moved variable declaration outside the loop
 5. Line 559 - using translateX for consistency, as per code review
 6. Lines 554, 564 - moving DOM query outside  loop and initializing local variable
+7. Line 526 - Calculate the phases outside the loop
+8. Line 530 - Fixed typo
+
 
 views/css/style.css
 Lines 37,38-   performance improvement - as per code review
