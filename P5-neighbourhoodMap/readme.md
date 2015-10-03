@@ -1,7 +1,7 @@
 Project Name: Udacity FEND Project 5
 
 Application Overview (and How to use it):
-This is a single page application which displays a map of the address you type in, and searches yelp for what you want to look for and displays it on the map.
+This is a single page application which displays a map of the given address, and searches yelp for the entered search text. It displays on the map, the results found from yelp.
 
 
 SubComponents Used:
