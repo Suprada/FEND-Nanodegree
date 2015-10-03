@@ -14,8 +14,8 @@ SubComponents Used:
 7. oauth.js and sha1.js from google for oauth authentication for yelp
 
 Resources:
-1. Codecasts - https://plus.google.com/u/0/events/c01o5kvc9upuvsf5m14ofrpvnhk?authkey=CK6_mo_7yMPykAE
-2. Bower and gulp - http://andy-carter.com/blog/a-beginners-guide-to-package-manager-bower-and-using-gulp-to-manage-components
+- Codecasts - https://plus.google.com/u/0/events/c01o5kvc9upuvsf5m14ofrpvnhk?authkey=CK6_mo_7yMPykAE
+- Bower and gulp - http://andy-carter.com/blog/a-beginners-guide-to-package-manager-bower-and-using-gulp-to-manage-components
 3. Large single page applications using Knockout - https://vimeo.com/97519516
 4. http://www.codeproject.com/Articles/387626/BikeInCity-2-KnockoutJS-JQuery-Google-Maps
 5. Yelp API documentation
