@@ -5,8 +5,8 @@ This is a single page application which displays a map of the address you type i
 
 
 SubComponents Used:
-1. Bower package manager
-2. Knockout JS library
+- Bower package manager
+- Knockout JS library
 3. Pure CSS framework
 4. Google Maps API
 5. Google Geocoder API
