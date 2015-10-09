@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 // A google map object
 var gMap = function(center){
-    var self = this;
+    //var self = this; removed as per code review
     var mapOptions = {
         zoom: 10,
         center: center
@@ -17,7 +17,7 @@ var gMap = function(center){
     element =  $('#map')[0];
     map = new google.maps.Map(element,mapOptions);
     return map;
-}
+};//added semicolon as per code review
 
 // A single location object
 var Location = function(name,phone,website,address,coordinates,provider){
@@ -105,7 +105,8 @@ var ViewModel = function(){
 	//function to initiate a new view when zip or search change and submit button was hit
 	this.updateHoodSearch = function(){
 		// check if search params have actually changed or if submit was hit jlt
-		if (hasChanged == true){	//some param changed
+        //changed to strict equality operator as per code review
+		if (hasChanged === true){	//some param changed
             //convert zipcode to latlng and move map there
             googleGeoCodeAddress(map);
             if (infoWnd) {
@@ -169,7 +170,7 @@ var ViewModel = function(){
 
 		var yelpTimeout = setTimeout(function(){
 			//console.log("Can't reach yelp currently.");
-            $('.pure-menu-heading').html('<h2>Sorry! Cannot load yelp data</h2>')
+            $('.pure-menu-heading').html('<h2>Sorry! Cannot load yelp data</h2>'); //added semicolon as per code review
 		},8000);
 
 		$.ajax({
@@ -214,7 +215,7 @@ var ViewModel = function(){
                     url: "http://yelp-images.s3.amazonaws.com/assets/map-markers/annotation_48x64.png",
                     scaledSize: new google.maps.Size(18,24)//(24, 32)
                 }
-            };
+            } //removed semicolon as per code review
             nmarker = new google.maps.Marker({
                 map:map,
                 title:that.name(),
@@ -266,7 +267,7 @@ var ViewModel = function(){
 
     var clearMarkers = function() {
         setMapOnAll(null);
-    }
+    }; //added semicolon as per code review
 
     var deleteMarkers = function(){
         clearMarkers();
