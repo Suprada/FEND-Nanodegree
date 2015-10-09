@@ -1,12 +1,20 @@
-Project Name: Udacity FEND Project 5
+Project Name: Udacity FEND Project 5 -
+Search your neighbourhood!
 
 Application Overview (and How to use it):
-This is a single page application which displays a map of the address you type in, and searches yelp for what you want to look for and displays it on the map.
+This is a single page application which displays a map of your neighbourhood and searces yelp for whatever you want to search
+
+- Search any neighbourhood - silicon valley? New York? or Nebraska? Just type in the address or zipcode 
+- Search for books, restaurants, ice cream, surplus supplies - whatever in your neighbourhood and click search.
+- See the yelp results on the map
+- And see the list of yelp results on the side bar
+- Click on the side-bar entry or the map marker on the map for more information
+- Enjoy the app on your desktop or your mobile
 
 
 SubComponents Used:
-1. Bower package manager
-2. Knockout JS library
+- Bower package manager
+- Knockout JS library
 3. Pure CSS framework
 4. Google Maps API
 5. Google Geocoder API
@@ -14,8 +22,8 @@ SubComponents Used:
 7. oauth.js and sha1.js from google for oauth authentication for yelp
 
 Resources:
-1. Codecasts - https://plus.google.com/u/0/events/c01o5kvc9upuvsf5m14ofrpvnhk?authkey=CK6_mo_7yMPykAE
-2. Bower and gulp - http://andy-carter.com/blog/a-beginners-guide-to-package-manager-bower-and-using-gulp-to-manage-components
+- Codecasts - https://plus.google.com/u/0/events/c01o5kvc9upuvsf5m14ofrpvnhk?authkey=CK6_mo_7yMPykAE
+- Bower and gulp - http://andy-carter.com/blog/a-beginners-guide-to-package-manager-bower-and-using-gulp-to-manage-components
 3. Large single page applications using Knockout - https://vimeo.com/97519516
 4. http://www.codeproject.com/Articles/387626/BikeInCity-2-KnockoutJS-JQuery-Google-Maps
 5. Yelp API documentation
