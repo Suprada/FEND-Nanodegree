@@ -1,7 +1,15 @@
-Project Name: Udacity FEND Project 5
+Project Name: Udacity FEND Project 5 -
+Search your neighbourhood!
 
 Application Overview (and How to use it):
-This is a single page application which displays a map of the given address, and searches yelp for the entered search text. It displays on the map, the results found from yelp.
+This is a single page application which displays a map of your neighbourhood and searces yelp for whatever you want to search
+
+- Search any neighbourhood - silicon valley? New York? or Nebraska? Just type in the address or zipcode 
+- Search for books, restaurants, ice cream, surplus supplies - whatever in your neighbourhood and click search.
+- See the yelp results on the map
+- And see the list of yelp results on the side bar
+- Click on the side-bar entry or the map marker on the map for more information
+- Enjoy the app on your desktop or your mobile
 
 
 SubComponents Used:
