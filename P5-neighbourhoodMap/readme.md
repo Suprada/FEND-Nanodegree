@@ -1,7 +1,7 @@
 Project Name: Udacity FEND Project 5 -
 Search your neighbourhood!
 
-Application Overview (and How to use it):
+Application Overview :
 This is a single page application which displays a map of your neighbourhood and searces yelp for whatever you want to search
 
 - Search any neighbourhood - silicon valley? New York? or Nebraska? Just type in the address or zipcode 
@@ -11,6 +11,7 @@ This is a single page application which displays a map of your neighbourhood and
 - Click on the side-bar entry or the map marker on the map for more information
 - Enjoy the app on your desktop or your mobile
 
+Try it out here at <a href="http://suprada.github.io/P5-NeighbourhoodMap/">http://suprada.github.io/P5-NeighbourhoodMap/</a>
 
 SubComponents Used:
 - Bower package manager
