@@ -1,4 +1,4 @@
-# Project Name: Udacity FEND Project 6 - Feed Reader Testing using Jasmine
+Project Name: Udacity FEND Project 6 - Feed Reader Testing using Jasmine
 
 # Project Overview
 
