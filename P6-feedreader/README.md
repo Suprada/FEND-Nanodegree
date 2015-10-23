@@ -14,7 +14,7 @@ In this project you are given a web-based application that reads RSS feeds. The 
 5. In "Initial Entries" test suite - a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
 6. In "New Feed Selection" test suite - a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes.
 
-* How to Run
+# How to Run
 
 - Download or clone the repository
 - open it in your browser locally. All needed Jasmine libraries are included
